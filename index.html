@@ -13,18 +13,52 @@
         <li>
           malzeno
           <br>
+          <script>
+            fetch('informacion/malzeno.txt')
+                .then(response => response.text()) 
+                .then(contenidoDelArchivo => {
+                    let contenedor = document.getElementById('texto-malzeno');
+                    contenedor.innerHTML = `<p>${contenidoDelArchivo}</p>`;
+                })
+                .catch(error => {console.error('Hubo un error al leer el archivo:', error);
+                });
+            </script>
+          <div id="texto-malzeno"></div>
           <img src="https://i.redd.it/7tbww77f0nub1.jpg" width="300" height="200" alt="Imagen de malzeno">
+          <br>
 
 
         </li>
         <li>
           nargacuga
           <br>
+          <script>
+            fetch('informacion/nargacuga.txt')
+                .then(response => response.text()) 
+                .then(contenidoDelArchivo => {
+                    let contenedor = document.getElementById('texto-nargacuga');
+                    contenedor.innerHTML = `<p>${contenidoDelArchivo}</p>`;
+                })
+                .catch(error => {console.error('Hubo un error al leer el archivo:', error);
+                });
+            </script>
+          <div id="texto-nargacuga"></div>
           <img src="https://i.etsystatic.com/14731584/r/il/b6f542/2432941302/il_570xN.2432941302_f59c.jpg" width="300" height="200" alt="Imagen de nargacuga">
         </li>
         <li>
           rajang
           <br>
+          <script>
+            fetch('informacion/rajang.txt')
+                .then(response => response.text()) 
+                .then(contenidoDelArchivo => {
+                    let contenedor = document.getElementById('texto-rajang');
+                    contenedor.innerHTML = `<p>${contenidoDelArchivo}</p>`;
+                })
+                .catch(error => {console.error('Hubo un error al leer el archivo:', error);
+                });
+            </script>
+          <div id="texto-rajang"></div>
           <img src="https://www.monsterhunter.com/world-iceborne/topics/rajang/images/img01.png" width="300" height="200" alt="Imagen de rajang">
         </li>
       </ul>
