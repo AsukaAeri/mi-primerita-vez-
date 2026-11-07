@@ -11,7 +11,7 @@
 
       <ul>
         <li>
-          malzeno
+          Malzeno
           <br>
           <script>
             fetch('informacion/malzeno.txt')
@@ -24,13 +24,11 @@
                 });
             </script>
           <div id="texto-malzeno"></div>
-          <img src="https://i.redd.it/7tbww77f0nub1.jpg" width="300" height="200" alt="Imagen de malzeno">
+          <img src="https://static.wikia.nocookie.net/monsterhunter/images/2/24/MHRS-Malzeno_Icon.png/revision/latest?cb=20220615153147" width="300" height="200" alt="Imagen de malzeno">
           <br>
-
-
         </li>
         <li>
-          nargacuga
+          Nargacuga
           <br>
           <script>
             fetch('informacion/nargacuga.txt')
@@ -43,10 +41,10 @@
                 });
             </script>
           <div id="texto-nargacuga"></div>
-          <img src="https://i.etsystatic.com/14731584/r/il/b6f542/2432941302/il_570xN.2432941302_f59c.jpg" width="300" height="200" alt="Imagen de nargacuga">
+          <img src="https://static.wikia.nocookie.net/monsterhunterespanol/images/4/47/MHWI-Icono_Nargacuga.png/revision/latest?cb=20210823122705&path-prefix=es" width="300" height="200" alt="Imagen de nargacuga">
         </li>
         <li>
-          rajang
+          Rajang
           <br>
           <script>
             fetch('informacion/rajang.txt')
@@ -59,9 +57,88 @@
                 });
             </script>
           <div id="texto-rajang"></div>
-          <img src="https://www.monsterhunter.com/world-iceborne/topics/rajang/images/img01.png" width="300" height="200" alt="Imagen de rajang">
+          <img src="https://static.wikia.nocookie.net/monsterhunter/images/f/fc/MHWI-Rajang_Icon.png/revision/latest?cb=20210724012204" width="300" height="200" alt="Imagen de rajang">
         </li>
-      </ul>
+        <li>
+          Valstrax
+          <br>
+          <script>
+            fetch('informacion/valstrax.txt')
+                .then(response => response.text()) 
+                .then(contenidoDelArchivo => {
+                    let contenedor = document.getElementById('texto-valstrax');
+                    contenedor.innerHTML = `<p>${contenidoDelArchivo}</p>`;
+                })
+                .catch(error => {console.error('Hubo un error al leer el archivo:', error);
+                });
+            </script>
+          <div id="texto-valstrax"></div>
+          <img src="https://static.wikia.nocookie.net/monsterhunter/images/8/88/MHRise-Crimson_Glow_Valstrax_Icon.png/revision/latest?cb=20211013211717" width="300" height="200" alt="Imagen de valstrax">
+        </li>
+        <li>
+          Fatalis 
+          <br>
+          <script>
+            fetch('informacion/fatalis.txt')
+                .then(response => response.text()) 
+                .then(contenidoDelArchivo => {
+                    let contenedor = document.getElementById('texto-fatalis');
+                    contenedor.innerHTML = `<p>${contenidoDelArchivo}</p>`;
+                })
+                .catch(error => {console.error('Hubo un error al leer el archivo:', error);
+                });
+            </script>
+          <div id="texto-fatalis"></div>
+          <img src="https://static.wikia.nocookie.net/monsterhunter/images/0/09/MHWI-Fatalis_Icon.png/revision/latest?cb=20210724203023" width="300" height="200" alt="Imagen de fatalis"> 
+        </li>
+        <li>
+          Fatalis Carmesi
+          <br>
+          <script>
+            fetch('informacion/fataliscarmesi.txt')
+                .then(response => response.text()) 
+                .then(contenidoDelArchivo => {
+                    let contenedor = document.getElementById('texto-fataliscarmesi');
+                    contenedor.innerHTML = `<p>${contenidoDelArchivo}</p>`;
+                })
+                .catch(error => {console.error('Hubo un error al leer el archivo:', error);
+                });
+            </script>
+          <div id="texto-fataliscarmesi"></div>
+          <img src="https://static.wikia.nocookie.net/fanonmonsterhunter/images/0/04/Crimson_Fatalis_Icon_by_YukiHerz_and_Rathalosaurus.png/revision/latest?cb=20221214192948" width="300" height="200" alt="Imagen de fatalis carmesi">  
+        </li> 
+        <li>
+          Fatalis Blanco
+          <br>
+          <script>
+            fetch('informacion/fatalisblanco.txt')
+                .then(response => response.text()) 
+                .then(contenidoDelArchivo => {
+                    let contenedor = document.getElementById('texto-fatalisblanco');
+                    contenedor.innerHTML = `<p>${contenidoDelArchivo}</p>`;
+                })
+                .catch(error => {console.error('Hubo un error al leer el archivo:', error);
+                });
+            </script>
+          <div id="texto-fatalisblanco"></div>
+          <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/76c77add-fdad-46ec-a87d-f245aa1c1ce2/deeit40-0c128cfa-6ed9-453e-ad39-3aab6ce8ac62.png/v1/fill/w_600,h_612/white_fatalis_icon_mhw_style_by_dissidiabetty_deeit40-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NjEyIiwicGF0aCI6Ii9mLzc2Yzc3YWRkLWZkYWQtNDZlYy1hODdkLWYyNDVhYTFjMWNlMi9kZWVpdDQwLTBjMTI4Y2ZhLTZlZDktNDUzZS1hZDM5LTNhYWI2Y2U4YWM2Mi5wbmciLCJ3aWR0aCI6Ijw9NjAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.GfsRMgKlZAd7S07HA45AA26rhQjIcJFhxvg9YNZaRB4" width="300" height="200" alt="Imagen de fatalis blanco"> 
+        </li> 
+        <li>
+          Alatreon
+          <br>
+          <script>
+            fetch('informacion/alatreon.txt')
+                .then(response => response.text()) 
+                .then(contenidoDelArchivo => {
+                    let contenedor = document.getElementById('texto-alatreon');
+                    contenedor.innerHTML = `<p>${contenidoDelArchivo}</p>`;
+                })
+                .catch(error => {console.error('Hubo un error al leer el archivo:', error);
+                });
+            </script>
+          <div id="texto-alatreon"></div>
+          <img src="https://fbi.cults3d.com/uploaders/34039604/illustration-file/0cc55075-f872-4c96-9b68-ae863a37be63/Alatreon-Icon.png" width="300" height="200" alt="Imagen de alatreon">
+        </ul>
     </body>
 </html>
 
